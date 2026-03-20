@@ -141,7 +141,7 @@ export const POCompliance = () => {
               <XAxis dataKey="name" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
               <Tooltip
-                formatter={(v: any, name: string) => [`$${(v * 1000).toLocaleString()}`, name === 'budget' ? 'Budget' : 'Billed']}
+                formatter={(v: any, name: any) => [`$${(v * 1000).toLocaleString()}`, name === 'budget' ? 'Budget' : 'Billed']}
                 contentStyle={{ fontSize: 11, borderRadius: 6 }}
               />
               <Bar dataKey="budget" name="Budget" fill="#e2e8f0" radius={[3, 3, 0, 0]} />
